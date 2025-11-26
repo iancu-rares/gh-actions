@@ -1,8 +1,7 @@
-name: Output Event Details on "issues"
+name: Output Event Details on issues
 on: issues
-
 jobs:
-  output-details:
+  output-info:
     runs-on: ubuntu-latest
     steps:
       - name: Output issue event details
