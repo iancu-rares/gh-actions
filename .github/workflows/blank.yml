@@ -1,12 +1,13 @@
 name: multi-line commands
-on: multiline
+on: 
+  workflow_dispatch:
 jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Multi-line commands
-      run: |
-        echo "My"
-        echo "Name"
-        echo "Is"
-        echo "Rares"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Multi-line commands
+        run: |
+          echo "My"
+          echo "Name"
+          echo "Is"
+          echo "Rares"
