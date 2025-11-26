@@ -1,0 +1,12 @@
+name: multi-line commands
+on: multiline
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Multi-line commands
+      run: |
+        echo "My"
+        echo "Name"
+        echo "Is"
+        echo "Rares"
