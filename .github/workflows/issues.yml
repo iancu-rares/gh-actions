@@ -1,8 +1,12 @@
-name: Output Event Details on issues
+name: Exercise
 on: issues
-jobs:
-  output-info:
+jobs: 
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Output issue event details
-        run: echo "${{ toJSON(github.event) }}"
+      - uses: actions/checkout@v3
+        name: Checkout code
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
